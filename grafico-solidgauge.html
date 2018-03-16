@@ -1,0 +1,20 @@
+<div class="full-width display-flex display-center">
+    <div class="djr-unoccupied text-center border-bottom border-gray-lighten">
+        <h4>{{ title }}</h4>
+    </div>
+    <div class="djr-solidgauge margin-top-5 display-flex-center djr-busy border-bottom border-gray-lighten">
+        <div class="djr-solidgauge-result" ng-style="percent"></div>
+        <div class="djr-solidgauge-bad"></div>
+        <div class="djr-solidgauge-good"></div>
+        <div class="djr-solidgauge-fantastic"></div>
+        <div class="djr-solidgauge-bkgd djr-shadow-sec"></div>
+        <div class="djr-solidgauge-legend djr-unoccupied full-width text-black text-center">
+            <h3>{{ model }} <span>%</span></h3>
+            <p ng-bind="(result > 100) ? 'Fantastic' : (result > 60) ? 'Good' : 'Bad'"></p>            
+        </div>
+        <div class="djr-unoccupied text-gray font-size-sm djr-solidgauge-num-0">0</div>
+        <div class="djr-unoccupied text-gray font-size-sm djr-solidgauge-num-60">60</div>
+        <div class="djr-unoccupied text-gray font-size-sm djr-solidgauge-num-100">100</div>
+        <div class="djr-unoccupied font-size-sm djr-solidgauge-num-200" ng-bind="(result > 199) ? '+200' : '200'" ng-class="(result > 199) ? 'font-bold text-green' : 'text-gray'"></div>
+    </div>
+</div>
