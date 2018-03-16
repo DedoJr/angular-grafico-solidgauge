@@ -24,8 +24,8 @@
                 });
 
                 scope.$watch(attrs.ngModel, (value) => {
-                    scope.resultado = (value > 200) ? 200 : value;
-                    scope.porcento = {'transform': `rotate(${scope.resultado * (180 / 200) - 45}deg)`};
+                    scope.result = (value > 200) ? 200 : value;
+                    scope.percent = {'transform': `rotate(${scope.resultado * (180 / 200) - 45}deg)`};
                 });
             }
         }
