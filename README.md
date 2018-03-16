@@ -1,2 +1,2 @@
 # angular-grafico-solidgauge
-Gráfico de calibre
+Diretiva do gráfico de calibre
